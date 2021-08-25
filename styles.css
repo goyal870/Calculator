@@ -1,0 +1,135 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+   
+   * {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+
+  body {
+    padding: 1rem;
+    margin: 0;
+    background: #edc0bf;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    font-family: 'Inter', sans-serif;
+    
+    
+  }
+
+.container{
+    text-align: center;
+    margin-top:20px
+}
+
+table{
+    margin: auto;
+    background-color: grey;
+    border-radius: 20px;
+    background: rgba(75, 74, 78, 0.5);
+}
+
+input{
+   
+      height: 125px;
+      width: 300px;
+      text-align: right;
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 30px;
+      background: transparent;
+      color: black;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+button{
+    
+    font-size: 30px;
+    font-family: 'Oleo Script', cursive;
+    
+    width: 70px;
+    border-radius: 15px;
+    height: 80px;
+    margin: 5px;
+    
+}
+ 
+.square {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    
+  }
+
+  
+
+  .square:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: -15px;
+    right: -45px;
+
+  }
+
+  .square:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    top: 150px;
+    left: -150px;
+    z-index: 5;
+  }
+
+  .square:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    bottom: 85px;
+    right: -45px;
+    z-index: 2;
+  }
+
+  .square:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    bottom: 35px;
+    left: -95px;
+  }
+
+  .square:nth-child(5) {
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -25px;
+  }
+
+  .square:nth-child(6) {
+    width: 85px;
+    height: 85px;
+    top: 65px;
+    right: -15px;
+    z-index: 2;
+  }
+
+.calculator{     
+    padding: 7px;
+    border-radius: 30px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.425);
+	-webkit-backdrop-filter: blur(20px);
+	backdrop-filter: blur(20px);
+    animation: square 10s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+    margin-top: 2.5rem;
+    
+}
+    
+
+
